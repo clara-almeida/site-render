@@ -19,4 +19,4 @@ def telegram_update():
     chat_id = update ["message"]["chat"]["id"]
     mensagem = {"chat_id": chat_id, "text": "mensagem <b> recebida</b>!", "parse_mode": "HTML"}
     requests.post(url_envio_mensagem, data=mensagem)
-    return "ok" 
+    return "ok"
